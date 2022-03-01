@@ -4,57 +4,510 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pandadomalbot</title>
+    <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Montserrat:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <nav class="menu">
-      <a href="index.html">Inicio</a>
-      <a href="pages/comandos.html">Comandos Gerais</a>
-      <a href="pages/brincadeiras.html">Brincadeiras</a>
-      <a href="pages/regras.html">Ganhe pontos</a>
-    </nav>
-    <section class="container">
-      <div class="container-text">
-        <h1 class="container-text_h1">Olá, eu sou o pandadomalbot!</h1>
-        <p class="container-text_p">
-          Fui criado para divertir e alegrar o chat da melhor live da galacta.
-          Faço brincadeiras, ajudo a streamer e entretenho meus queridos amigos.
-        </p>
-        <p class="container-text_p">
-          Tenho comandos para divulgar as redes sociais da minha streamer e para
-          guiar quem quiser ajudar financeiramente o seu canal.
-        </p>
-        <p class="container-text_p">
-          Brincadeiras divertídissimas para manter o chat feliz.
-        </p>
-        <p class="container-text_p">
-          E ainda possuo um disputado ranking.
-        </p>
-        <p class="container-text_p">
-          Ah, não conte para ninguém, mas eu também tenho alguns comandos
-          segredos que você pode descobrir quando menos esperar.
-        </p>
-        <p class="container-text_p">
-          Navegue pelos menus acima e descubra tudo o que eu posso fazer 🐼
-        </p>
-        <a href="https://www.twitch.tv/levxyca"
-          ><button class="container-btn">
-            Acesse a melhor live da galacta
-          </button></a
-        >
-      </div>
-      <img
-        class="container-img"
-        src="img/panda.png"
-        alt="Desenho do panda do mal"
+      <input class="menu__btn" id="home" type="button" value="Inicio" />
+      <input
+        class="menu__btn"
+        id="comandos"
+        type="button"
+        value="Comandos Gerais"
       />
-    </section>
+      <input
+        class="menu__btn"
+        id="brincadeiras"
+        type="button"
+        value="Brincadeiras"
+      />
+      <input class="menu__btn" id="regras" type="button" value="Ganhe pontos" />
+    </nav>
+    <main class="container">
+      <section class="home active">
+        <div class="container-text">
+          <h1 class="container-text_h1">Olá, eu sou o pandadomalbot!</h1>
+          <p class="container-text_p">
+            Fui criado para divertir e alegrar o chat da melhor live. Faço
+            brincadeiras, ajudo a streamer e entretenho minhas queridas pessoas
+            amigas.
+          </p>
+          <p class="container-text_p">
+            Tenho comandos para divulgar as redes sociais da minha streamer e
+            para guiar quem quiser ajudar financeiramente o seu canal.
+          </p>
+          <p class="container-text_p">
+            Brincadeiras divertídissimas para manter o chat feliz.
+          </p>
+          <p class="container-text_p">E ainda possuo um disputado ranking.</p>
+          <p class="container-text_p">
+            Ah, não conte para ninguém, mas eu também tenho alguns comandos
+            segredos que você pode descobrir quando menos esperar.
+          </p>
+          <p class="container-text_p">
+            Navegue pelos menus acima e descubra tudo o que eu posso fazer 🐼
+          </p>
+          <a href="https://www.twitch.tv/levxyca"
+            ><button class="container-btn">Conheça a livexyca</button></a
+          >
+        </div>
+        <img
+          class="container-img"
+          src="img/panda.png"
+          alt="Desenho do panda do mal"
+        />
+      </section>
+      <section class="comandos none">
+        <article>
+          <h1 class="container-text_h1">Comandos Gerais</h1>
+          <nav class="container__toc">
+            <ul>
+              <li class="container__toc-li">
+                <a class="container__toc-a" href="#geral">Geral</a>
+              </li>
+              <li class="container__toc-li">
+                <a class="container__toc-a" href="#quadros">Quadros</a>
+              </li>
+              <li class="container__toc-li">
+                <a class="container__toc-a" href="#social">Social</a>
+              </li>
+              <li class="container__toc-li">
+                <a class="container__toc-a" href="#apoie">Apoie o canal</a>
+              </li>
+            </ul>
+          </nav>
+          <h2 class="container-text_h2" id="geral">Geral</h2>
+          <h3 class="container-text_h3">!comandos ou !commands</h3>
+          <p class="container-text_p">
+            <mark>!comandos</mark> ou <mark>!commands</mark> trás um lista de
+            todos os comandos ativos no canal.
+          </p>
+          <p class="container-text_p">
+            <mark>!followage</mark> mostra há quanto tempo você segue o canal.
+          </p>
+          <p class="container-text_p">
+            <mark>!tema</mark> ou <mark>!theme</mark> retorna qual tema eu estou
+            utilizando no meu VSCode.
+          </p>
+          <p class="container-text_p">
+            <mark>!docs</mark> manda o link do meu repositório no github onde eu
+            armazeno as minhas anotações de estudo.
+          </p>
+          <p class="container-text_p">
+            <mark>!help</mark> ou <mark>!site</mark> para pegar o link da
+            documentação do pandadomalbot.
+          </p>
+          <p class="container-text_p">
+            <mark>!bot</mark> para acessar o repositório do pandadomalbot.
+          </p>
+          <h2 class="container-text_h2" id="quadros">Quadros</h2>
+          <p class="container-text_p">
+            Veja informações sobre os quadros existente no canal da "levxyca":
+          </p>
+          <p class="container-text_p"><mark>!co-conversinha</mark></p>
+          <p class="container-text_p"><mark>!logicadelevs</mark></p>
+          <h2 class="container-text_h2" id="social">Social</h2>
+          <p class="container-text_p">
+            Nesta categoria estão diversos comandos que direcionam para as redes
+            da Levxyca:
+          </p>
+          <h3 class="container-text_h3">!social</h3>
+          <p class="container-text_p">
+            Retorna os links para todas as redes da streamer.
+          </p>
+          <p class="container-text_p">
+            Lista dos comandos de cada rede social:
+          </p>
+          <p class="container-text_p"><mark>!podcast</mark></p>
+          <p class="container-text_p"><mark>!youtube</mark></p>
+          <p class="container-text_p"><mark>!telegram</mark></p>
+          <p class="container-text_p"><mark>!discord</mark></p>
+          <p class="container-text_p"><mark>!caverna</mark></p>
+          <p class="container-text_p"><mark>!podcast</mark></p>
+          <p class="container-text_p"><mark>!github</mark></p>
+          <h2 class="container-text_h2" id="apoie">Apoie o canal!</h2>
+          <p class="container-text_p">
+            Lembrando que toda vez que você apoia o canal enquanto estou em live
+            temos alertas e interações especiais para agradecer 🤗
+          </p>
+          <p class="container-text_p"><mark>!donate</mark></p>
+          <p class="container-text_p">
+            As doações e incrições(subs) são uma forma de ajudar a melhorar a
+            qualidade das streams. Caso queria doar, qualquer quantia é aceita e
+            bem vinda! Você pode pode usar o `!donate` para ver as formas gerais
+            de doar.
+          </p>
+          <p class="container-text_p">
+            Você pode doar pelo
+            <a href="https://streamlabs.com/levxyca/tip">PayPal</a>, ou pelo
+            <a href="https://app.picpay.com/user/levxyca">Picpay</a> 💰
+          </p>
+          <p class="container-text_p"><mark>!prime</mark></p>
+          <p class="container-text_p">Sub no canal via Amazon Prime.</p>
+          <p class="container-text_p">
+            Você também tem a opção de usar o seu prime da Amazon para dar um
+            sub no canal. Com o prime você paga 9,99R$ e você pode dar um sub
+            aqui na live, assistir filmes, músicas, frete gratis e muito mais ❤️
+            Para saber mais, use o
+            <a href="twitch.amazon.com/tp">!prime</a>
+          </p>
+          <p class="container-text_p"><mark>!picpay</mark></p>
+          <p class="container-text_p">
+            Você pode doar através do
+            <a href="https://app.picpay.com/user/levxyca">picpay</a> 💰
+          </p>
+          <p class="container-text_p"><mark>!sub</mark></p>
+          <p class="container-text_p">
+            Quer apoiar o canal e me incentivar a fazer algo que eu amo? ⭐
+            <a href="https://www.twitch.tv/subs/levxyca">Seja sub do canal</a>
+            por apenas <strong>R$7.90</strong>.
+          </p>
+        </article>
+      </section>
+      <section class="brincadeiras none">
+        <div class="container-scroll">
+          <article>
+            <h1 class="container-text_h1">Brincadeiras</h1>
+            <nav class="container__toc">
+              <ul>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#contadores">Contadores</a>
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#perguntas"
+                    >Perguntas sobre a vida</a
+                  >
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#ban">Ban do amor</a>
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#piadas"
+                    >Piadas de qualidade</a
+                  >
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#ensinamentos"
+                    >Ensinamentos sobre a vida</a
+                  >
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#amizade"
+                    >Descubra o seu nível de amizade com as outras pessoas do
+                    chat</a
+                  >
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#sorveteria">Sorveteria</a>
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#emotes">Chuva de emotes</a>
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#outros">Outros</a>
+                </li>
+              </ul>
+            </nav>
+            <h2 class="container-text_h2" id="contadores">Contadores</h2>
+            <p class="container-text_p">
+              Surgiu com uma brincadeira na live devido a
+              <em>supostamente</em> a streamer dizer muitas vezes algumas
+              palavras específicas. Os contadores mostram quantas vezes a
+              streamer já disse aquela palavra naquele dia e quantas vezes no
+              total de todas as streams.
+            </p>
+            <p class="container-text_p"><mark>!eita</mark></p>
+            <p class="container-text_p">
+              Toda vez que a streamer diz <em>eita</em> você pode digitar
+              <strong>!eita</strong> no chat para adicionar mais um eita no
+              contator.
+            </p>
+            <p class="container-text_p"><mark>!calma</mark></p>
+            <p class="container-text_p">
+              Toda vez que a streamer diz <em>calma</em> você pode digitar
+              <strong>!calma</strong> no chat para adicionar mais um calma no
+              contator.
+            </p>
+            <p class="container-text_p"><mark>!oh</mark></p>
+            <p class="container-text_p">
+              Toda vez que a streamer diz <em>ó</em> você pode digitar
+              <strong>!oh</strong> no chat para adicionar mais um ó no contator.
+            </p>
+            <h2 class="container-text_h2" id="perguntas">
+              Perguntas sobre a vida
+            </h2>
+            <p class="container-text_p"><mark>!pergunta</mark></p>
+            <p class="container-text_p">
+              Faça uma pergunta para o panda sobre a vida o universo e tudo mais
+              e ele lhe responderá com toda a sua magnifíca sabedoria e maldade.
+            </p>
+            <p class="container-text_p">Exemplo:</p>
+            <p class="container-text_p">
+              <em>!pergunta vai ter sorteio hoje?</em>
+            </p>
+            <h2 class="container-text_h2" id="ban">Ban do amor</h2>
+            <p class="container-text_p"><mark>!ban</mark></p>
+            <p class="container-text_p">
+              Esse é o <em>ban do amor</em>, você pode dar
+              <strong>!ban</strong> em alguém da live que você gosta muito e tem
+              uma porcentagem de chance de você tomar o "ban" ou a pessoa que
+              você marcou levar essa pra casa. Esse "ban" é um timeout
+              simbólico.
+            </p>
+            <p class="container-text_p">
+              Digite o comando <em>!ban</em> com o nome da pessoa.
+            </p>
+            <p class="container-text_p">Exemplo:</p>
+            <p class="container-text_p">
+              <em>!ban levxyca</em> ou <em>!ban @levxyca</em>
+            </p>
+            <h2 class="container-text_h2" id="piadas">Piadas de qualidade</h2>
+            <p class="container-text_p"><mark>!piada</mark></p>
+            <p class="container-text_p">
+              Temos um banco íncrivel de piadas criados especialmente pelo nosso
+              chat, é só digitar <em>!piada</em> e se preparar para rolar de
+              rir.
+            </p>
+            <p class="container-text_p">
+              Inclusive, você pode contribuir para o nosso banco de piadas,
+              basta resgatar a recompensa !piada que existe no nosso
+              <a href="https://www.twitch.tv/levxyca">canal da twitch</a>
+            </p>
+            <h2 class="container-text_h2" id="ensinamentos">
+              Ensinamentos sobre a vida
+            </h2>
+            <p class="container-text_p"><mark>!ensinamento</mark></p>
+            <p class="container-text_p">
+              Digite esse comando na live e pandadomalbot te dirá um grande
+              ensinamento sobre a vida.
+            </p>
+            <h2 class="container-text_h2" id="amizades">
+              Descubra o seu nível de amizade com as outras pessoas do chat
+            </h2>
+            <p class="container-text_p"><mark>!amizade</mark></p>
+            <p class="container-text_p">
+              Você pode utilizar <em>!amizade @username</em> para descobrir se
+              você realmente é amigo de alguém do chat.
+            </p>
+            <h2 class="container-text_h2" id="sorveteria">Sorveteria</h2>
+            <p class="container-text_p">
+              No canal você consegue comprar sorvetes geladinhos para refrescar
+              e adocicar sua vida.
+            </p>
+            <p class="container-text_p"><mark>!sorvete ou !picole</mark></p>
+            <p class="container-text_p">
+              Olha o sorvete e o picole fresquinho a toda hooora. Por apenas a
+              sua ALMA!!!
+            </p>
+            <p class="container-text_p"><mark>!sabores</mark></p>
+            <p class="container-text_p">
+              Para ver a lista dos sabores de sorvete disponíveis na nossa
+              sorveteria.
+            </p>
+            <p class="container-text_p"><mark>!comprar</mark></p>
+            <p class="container-text_p">Para comprar um sorvete fresquinho.</p>
+            <p class="container-text_p">
+              Você também pode escolher um sabor específico de sorvete
+              utilizando o <em>!comprar nomedosabor</em>. Para ver a lista de
+              sabores use o <em>!sabores</em>.
+            </p>
+            <p class="container-text_p"><mark>!geladeira</mark></p>
+            <p class="container-text_p">
+              Para ver quais e quantos sorvetes você já comprou.
+            </p>
+            <h2 class="container-text_h2" id="emotes">Chuva de emotes</h2>
+            <p class="container-text_p"><mark>!amor</mark></p>
+            <p class="container-text_p">Mande uma chuva de amor no chat.</p>
+            <p class="container-text_p"><mark>!animada</mark></p>
+            <p class="container-text_p">
+              Mande uma chuva de levchiquinhas animadas.
+            </p>
+            <p class="container-text_p"><mark>!banheiro</mark></p>
+            <p class="container-text_p">
+              Para quando a streamer for no banheiro.
+            </p>
+            <h2 class="container-text_h2" id="outros">Outros</h2>
+            <p class="container-text_p"><mark>!lola e !meleca</mark></p>
+            <p class="container-text_p">
+              Use quando estiver ouvindo latidos na live.
+            </p>
+            <p class="container-text_p"><mark>!nario</mark></p>
+            <p class="container-text_p">
+              Um gerador de Nario especial para você.
+            </p>
+            <p class="container-text_p"><mark>!lev</mark></p>
+            <p class="container-text_p">
+              Um gerador de levxyca especial para você.
+            </p>
+            <p class="container-text_p"><mark>!origem</mark></p>
+            <p class="container-text_p">
+              Ouça a música contando a origem do pandadomalbot.
+            </p>
+          </article>
+        </div>
+      </section>
+      <section class="regras none">
+        <div class="container-scroll">
+          <article>
+            <h1 class="container-text_h1">Regras</h1>
+            <nav class="container__toc">
+              <ul>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#como-funciona"
+                    >Como funciona?</a
+                  >
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#premios">Prêmios</a>
+                </li>
+                <li class="container__toc-li">
+                  <a class="container__toc-a" href="#ganhe-pontos"
+                    >Certo, como eu ganho pontos então?</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <h2 class="container-text_h2" id="como-funciona">Como funciona?</h2>
+            <p class="container-text_p">
+              <!-- Os <em>pontos</em> são valores simbólicos que você ganha ao participar de algumas interações com o pandadomalbot🐼. Os pontos são computados mensalmente, então toda última live do mês nós vemos os ganhadores do ranking e resetamos tudo. Para ver seus pontos utilize o <strong>!pontos</strong>. -->
+              Os <em>pontos</em> são valores simbólicos que você ganha ao
+              participar de algumas interações com o pandadomalbot🐼. Para ver
+              seus pontos utilize o <strong>!pontos</strong>.
+            </p>
+            <p class="container-text_p">
+              A cada 5 minutos assistindo a live, você já ganha 5 pontos.
+            </p>
+            <p class="container-text_p">
+              Para ver sua colocação no ranking utilize o
+              <strong>!rank</strong>.
+            </p>
+            <h2 class="container-text_h2" id="premios">Prêmios</h2>
+            <p class="container-text_p">O prêmio atual da nossa loja é:</p>
+            <p class="container-text_p">
+              ○ 💵 <strong>R$50</strong> em produtos na Amazon (1 resgate mensal
+              - !resgatar 50pila)
+            </p>
+            <p class="container-text_p">
+              Você também pode digiter <strong>!loja</strong> no chat para ver
+              os items e para resgatar basta usar
+              <strong>!resgatar (item)</strong>.
+            </p>
+            <h2 class="container-text_h2" id="ganhe-pontos">
+              Certo, como eu ganho pontos então?
+            </h2>
+            <h3 class="container-text_h3">Prisão</h3>
+            <p class="container-text_p">
+              A prisão do panda do mal é uma brincadeira onde o panda prende
+              alguém do chat aleatóriamente ou quando as pessoas tentam
+              irritá-lo.
+            </p>
+            <h4 class="container-text_h4">!presos</h4>
+            <p class="container-text_p">
+              <mark>!presos</mark> para ver se tem alguém na prisão para salvar.
+            </p>
+            <h4 class="container-text_h4">!salvar</h4>
+            <p class="container-text_p">
+              <mark>!salvar</mark> você pode usar esse comando quando alguém do
+              chat for preso para tentar salva-lo.
+            </p>
+            <p class="container-text_p">
+              Cada vez que você salva alguém, você consegue ganhar 100 pontos.
+            </p>
+            <h4 class="container-text_h4">!escapar</h4>
+            <p class="container-text_p">
+              <mark>!escapar</mark> serve para quando você for preso pelo panda
+              e quiser tentar fugir. Você tem apenas uma chance para obter
+              sucesso!
+            </p>
+            <p class="container-text_p">
+              Quando você obtem sucesso em escapar, você consegue ganhar uma
+              quantidade de pontos aleatória que vai de 0 até 200.
+            </p>
+            <h3 class="container-text_h3">Interações</h3>
+            <p class="container-text_p">
+              Todos tem direito a dar um carinho e um irritar toda live, mas
+              eles não ficam no seu estoque.
+            </p>
+            <p class="container-text_p">
+              Você <strong>consegue ganhar mais</strong> !carinho e !irritar
+              apoiando o canal ou trocando com pontos da live, conhecido como
+              bambuzinhos. Lembrando que é tudo acumulativo e uma vez usado uma
+              interação do estoque ela não volta mais.
+            </p>
+            <p class="container-text_p">
+              Para ver quantos carinhos e irritamentos você possui é só usar o
+              <strong>!estoque</strong>.
+            </p>
+            <p class="container-text_p">
+              <strong>Apoiando, você ganha:</strong>
+            </p>
+            <p class="container-text_p">
+              ○ 1 sub ou gift sub <em>(tier 1)</em> ⭐ 1 carinho e 1 irritar
+            </p>
+            <p class="container-text_p">
+              ○ 1 sub ou gift sub <em>(tier 2)</em> ⭐ 3 carinho e 3 irritar
+            </p>
+            <p class="container-text_p">
+              ○ 1 sub ou gift sub <em>(tier 3)</em> ⭐ 5 carinho e 5 irritar
+            </p>
+            <p class="container-text_p">○ 100 bitus 💎 2 carinho e 2 irritar</p>
+            <p class="container-text_p">○ 10 reais 💲 1 carinho e 1 irritar</p>
+            <p class="container-text_p">
+              <strong>Trocando, você ganha:</strong>
+            </p>
+            <p class="container-text_p">
+              ○ 2500 bambuzinhos 🎍 1 carinho e 1 irritar
+            </p>
+            <p class="container-text_p">
+              ○ 10000 bambuzinhos 🎍 5 carinho e 5 irritar
+            </p>
+            <h4 class="container-text_h4">!irritar</h4>
+            <p class="container-text_p">
+              <mark>!irritar</mark> você pode, por sua livre e espontânea
+              vontade tentar irritar o panda, os riscos são por sua conta.
+            </p>
+            <p class="container-text_p">
+              Caso você o irrite, ele te prenderá e você perde 5 pontos. Se você
+              conseguir sair correndo, você ganha 10 pontos.
+            </p>
+            <h4 class="container-text_h4">!carinho</h4>
+            <p class="container-text_p">
+              <mark>!carinho</mark> você pode fazer carinho no panda e caso
+              atinja o carinho PERFEITO, o panda vai te recompensar com 300
+              pontos! Também recompensamos os carinhos pelo seu nível de %.
+            </p>
+
+            <p class="container-text_p">○ Entre 90% á 99% = 20 pontos.</p>
+            <p class="container-text_p">○ Entre 80% á 89% = 15 pontos.</p>
+            <p class="container-text_p">○ Entre 70% á 79% = 10 pontos.</p>
+            <p class="container-text_p">○ Entre 60% á 69% = 5 pontos.</p>
+            <p class="container-text_p">
+              Para ver o mural das pessoas que já deram carinhos perfeitos use o
+              comando <b>!mural</b>
+            </p>
+            <h3 class="container-text_h3">Brincadeiras</h3>
+            <h4 class="container-text_h4">!first</h4>
+            <p class="container-text_p">
+              <mark>!first</mark> se você for a primeira pessoa da live a dar o
+              comando você ganha 100 pontos.
+            </p>
+            <h4 class="container-text_h4">!apostalev</h4>
+            <p class="container-text_p">
+              <mark>!apostalev</mark> digite o !apostalev + nome de uma lev que quer apostar para tentar ganhar pontos.
+              Caso ganhe, terá mais 150 pontos na sua conta.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js"></script>
   </body>
 </html>
